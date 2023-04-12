@@ -1,0 +1,115 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    grid-template-rows: 50px 1fr 50px;
+    height: 100vh;
+    grid-template-areas: 
+    "sidenav header"
+    "sidenav main"
+    "sidenav footer"
+    ;
+}
+
+.header{
+    grid-area: header;
+    background-color: #648ca6;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: #648ca6;
+}
+
+.sidenav{
+    grid-area: sidenav;
+    background-color: #394263;
+}
+
+.main{
+    grid-area: main;
+    background-color: #8fd4d9;
+}
+
+.header, .footer{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    background-color: #ffffff ;
+   
+}
+
+.sidenav{
+    display: flex;
+    flex-direction: column;
+}
+
+.sidenav__list{
+    padding: 0;
+    margin-top: 85px;
+    list-style-type: none;
+}
+
+.sidenav__list-item{
+    padding: 20px 20px 20px 40px;
+    color: #ddd;
+    
+}
+
+.sidenav__list-item:hover{
+    background-color: rgba(255,255,255, 0.2);
+    cursor: pointer;
+}
+
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 20px;
+    height: 150px;
+    background-color: #e3e4e6;
+    color: slategray;
+}
+
+.main-overview{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+    grid-auto-rows: 94px;
+    grid-gap: 20px;
+    margin: 20px;
+}
+
+.overviewcard{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #d3d3;
+}
+
+.main-cards{
+    column-count: 1;
+    column-gap: 20px;
+    margin:20px;
+}
+
+.card{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #82bef6;
+    margin-bottom: 20px;
+    padding: 24px;
+    box-sizing: border-box;
+    
+}
+
+.header__avatar {
+    width: 100%;
+    height: 100%;
+    background-image: url(./shrek.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
