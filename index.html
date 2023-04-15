@@ -11,50 +11,69 @@
 <body>
     <div class="grid-container">
         <header class="header">
+            <img onclick="toggleMenu()" src="./assets/menu.svg" alt="" style="cursor: pointer; width: 30px; height: 30px; z-index: 9999;">
             <div class="header__search">Search...</div>
             <div class="header__avatar"></div>
         </header>
 
-        <aside class="sidenav">
-            <ul class="sidenav__list">
-                <li class="sidenav__list-item">Item One</li>
-                <li class="sidenav__list-item">Item Two</li>
-                <li class="sidenav__list-item">Item Three</li>
-                <li class="sidenav__list-item">Item Four</li>
-                <li class="sidenav__list-item">Item Five</li>
+        <aside style="background-color: #394263; color: #fff; height: 100vh;" class="sidenav">
+
+            <div class="fotoMenu"> <span>Duffes</span> <img src="./shrek.png" alt=""></div>
+
+            <ul style="margin-left: 30px;" class="sidenav__list">
+                <div class="paiLi">Documents</div>
+                <li class="sidenav__list-item">Insurance</li>
+                <li class="sidenav__list-item">Travel</li>
+                <li class="sidenav__list-item">Taxes</li> <br>
+                <div class="paiLi">Messages</div>
+                <li class="sidenav__list-item">Inbox</li>
+                <li class="sidenav__list-item">Unread</li>
+                <li class="sidenav__list-item">Archives</li> <br>
+                <div class="paiLi">Photo Album</div>
+                <li class="sidenav__list-item">Vacation</li>
+                <li class="sidenav__list-item">Anniversary</li>
+                <li class="sidenav__list-item">University</li><br>
             </ul>
         </aside>
 
         <main class="main">
 
             <div class="main-header">
-                <div class="main-header__heading">Hello User</div>
-                <div class="main-header__updates">Recent Items</div>
+                <div class="main-header__heading">Hello, Duffes!</div>
             </div>
 
             <div class="main-overview">
                 <div class="overviewcard">
-                    <div class="overviewcard__icon">Overview</div>
-                    <div class="overviewcard__info">Card</div>
+                    <div class="overviewcard__icon" style="background-color: #E67E22; background-image: url(./assets/mail.svg);" ></div>
+                    <div class="overviewcard__info">New Document
+                        <p>Europe Trip</p>
+
+                    </div>
                 </div>
                 <div class="overviewcard">
-                    <div class="overviewcard__icon">Overview</div>
-                    <div class="overviewcard__info">Card</div>
+                    <div class="overviewcard__icon" style="background-color: #27AE60; background-image: url(./assets/gift.svg);" ></div>
+                    <div class="overviewcard__info">Upcoming Event
+                        <p>Cookoff</p>
+                    </div>
                 </div>
                 <div class="overviewcard">
-                    <div class="overviewcard__icon">Overview</div>
-                    <div class="overviewcard__info">Card</div>
+                    <div class="overviewcard__icon" style="background-color: #E74C3C; background-image: url(./assets/paper.svg);" ></div>
+                    <div class="overviewcard__info">Recent Emails
+                        <p>+ 10</p>
+                    </div>
                 </div>
                 <div class="overviewcard">
-                    <div class="overviewcard__icon">Overview</div>
-                    <div class="overviewcard__info">Card</div>
+                    <div class="overviewcard__icon" style="background-color: #AF64CC; background-image: url(./assets/send.svg);" ></div>
+                    <div class="overviewcard__info">New Album
+                        <p>Concert</p>
+                    </div>
                 </div>
             </div>
 
             <div class="main-cards">
-                <div class="card">Card</div>
-                <div class="card">Card</div>
-                <div class="card">Card</div>
+                <div id="card1" class="card"></div>
+                <div id="card2" class="card"></div>
+                <div id="card3" class="card"></div>
             </div>
 
         </main>
@@ -64,6 +83,7 @@
             <div class="footer__signature">Made with love</div>
         </footer>
     </div>
+    <script src="main.js"></script>
 </body>
 
 </html>
