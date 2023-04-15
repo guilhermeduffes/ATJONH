@@ -129,7 +129,6 @@
     background-size: contain;
     background-position: center;
     overflow: hidden;
-    margin-bottom: 20%;
 }
 
 #card2 {
@@ -168,7 +167,7 @@
 .fotoMenu{
     margin-top: 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
